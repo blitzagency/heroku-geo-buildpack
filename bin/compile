@@ -30,7 +30,8 @@ function indent() {
     *)      sed -u "$c";;
   esac
 }
-
+echo "manifest path:"
+echo "http://${S3_BUCKET}.s3.amazonaws.com/${STACK}/manifest.${1}"
 function manifest_version() {
   curl "http://${S3_BUCKET}.s3.amazonaws.com/${STACK}/manifest.${1}" -s -o - | head -n 1
 }
