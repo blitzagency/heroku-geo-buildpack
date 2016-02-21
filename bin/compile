@@ -12,7 +12,7 @@ unset GIT_DIR
 
 # Configuration
 S3_BUCKET=${HEROKU_GEO_BUILDBACK_S3_BUCKET:-"cyberdelia-geo-buildpack"}
-STACK=${STACK:-"cedar-14"}
+STACK="cedar-14"
 
 # Parameters
 BUILD_DIR=$1
